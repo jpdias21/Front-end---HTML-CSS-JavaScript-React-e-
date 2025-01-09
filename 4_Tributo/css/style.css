@@ -1,0 +1,77 @@
+body{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*Primerio bloco feito*/
+.titulo , 
+.subtitulo{
+text-align: center;
+}
+
+header{
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+/*Segundo bloco */
+.SobreABanda{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.TituloDoAssunto{
+    font-size: 25px;
+}
+
+.fraseDaBanda{
+    background-color: rgb(221,221,221);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#Frase{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.linhaParaBaixo{
+    border-bottom: 1px solid black;
+}
+
+/*Terceiro bloco */
+
+li{
+    padding: 5px;
+}
+.curiosidadesDaBanda{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+/*Quarto bloco */
+.trexoDaMusica{
+    margin-top: 20px;
+    background-color: rgb(221,221,221);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#textMusic{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    width: 60%;
+}
+
+
+/*Imagem e texto abaixo */
+.imgBanda{
+    display: flex;
+    justify-content: center;
+ }
+ .textoAbaixoDaImagem{
+     text-align: center;
+ }
+ .textoAbaixoDaImagem{
+     margin: 3px;
+ }

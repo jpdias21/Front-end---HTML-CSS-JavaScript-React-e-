@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Cadastre seu veiculo para vender mais rápido</h1>
+    <header>
+        <section class="conteinerFirst">
+            <h1>Cadastre seu veiculo para vender mais rápido</h1>
+        </section>
+    </header>
+
 
     <form action="">
         <section class="sectionEscricaoForm">
@@ -81,56 +86,3 @@
     </form>
 </body>
 </html>
-
-<!--
-Análise do código:
-Pontos positivos:
-Estrutura organizada e semântica:
-
-O uso de <section> e <label> torna o formulário acessível e fácil de entender.
-Boa prática ao adicionar atributos como id e for nos elementos de formulário.
-Estilo visual consistente:
-
-O design do formulário com bordas arredondadas, espaçamento adequado e cores contrastantes (como branco no fundo roxo) é visualmente agradável.
-Elementos como botões e inputs têm boa usabilidade, especialmente com o espaçamento e padding.
-Uso adequado de classes e IDs no CSS:
-
-Nomeação de classes bem clara e consistente, o que facilita a manutenção e leitura do código.
-Elementos obrigatórios destacados:
-
-O uso de <span id="red"> para destacar campos obrigatórios é funcional e atrai atenção ao que é necessário.
-Responsividade parcial:
-
-Configurações como width: 50vw ajudam na responsividade do formulário, tornando-o ajustável em telas de diferentes tamanhos.
-Pontos de melhoria:
-Correções ortográficas nos atributos:
-
-Corrigir os nomes dos atributos como titluloDoAnuncio (correto: tituloDoAnuncio) e outros semelhantes para evitar confusão e erros futuros.
-Centralização de texto no botão:
-
-A tag <p> dentro do botão é desnecessária. Ela pode ser removida para simplificar o HTML.
-Melhorar responsividade geral:
-
-Embora algumas partes sejam responsivas, como a largura dos campos, há áreas que podem ficar desorganizadas em telas muito pequenas (exemplo: os checkboxes).
-Utilize media queries para ajustar elementos como inputs e botões em dispositivos móveis.
-Repetição desnecessária no CSS:
-
-Há redundância, como em .inline-Block input e .inline-Block label. Combine seletores para tornar o CSS mais enxuto.
-Uso inconsistente de margens:
-
-Alguns elementos, como .filePhoto, têm margens repetidas (margin-bottom: 15px e margin-bottom: 30px). Padronize.
-Melhoria na acessibilidade:
-
-Adicione atributos como aria-label ou aria-describedby nos inputs para beneficiar usuários com leitores de tela.
-Use required consistentemente e inclua mensagens de validação.
-Melhor estrutura para checkboxes:
-
-Os opcionais poderiam ser agrupados dentro de uma <fieldset> com uma legenda <legend> para melhorar a semântica e acessibilidade.
-Como melhorar:
-Corrigir os erros de digitação nos atributos para evitar problemas de funcionamento.
-Tornar o CSS mais eficiente combinando seletores e removendo redundâncias.
-Adicionar estilos para telas pequenas, garantindo uma melhor experiência em dispositivos móveis.
-Melhorar a acessibilidade com atributos semânticos e explicativos nos inputs e labels.
-Eliminar elementos desnecessários, como <p> dentro do botão.
-Com essas melhorias, seu código será mais profissional, limpo e acessível. Continue praticando!
--->

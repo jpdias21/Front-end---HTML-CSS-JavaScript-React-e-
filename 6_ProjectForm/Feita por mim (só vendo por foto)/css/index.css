@@ -1,0 +1,83 @@
+html{
+    background-color: rgb(104,58,182);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+form{
+    width: 65vw;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+}
+
+.sectionEscricaoForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.primeiroBloco h3{
+    font-size: 30px;
+}
+#red{
+    color: red;
+}
+textarea{
+    margin-bottom: 15px;
+}
+#preenchimento{
+    width: 50vw;
+    border: white;
+    border-bottom: 0.5px solid gray;
+    padding: 7px;
+    margin-bottom: 15px;
+
+}
+#escricaoForm{
+    font-weight: normal;
+}
+
+label{ 
+    display: block;
+    margin-bottom: 5px;
+}
+.inline-Block{
+    display: inline-block;
+}
+
+.inline-Block , .inline-Block input , .inline-Block label {
+    display: inline-block;
+}
+.inline-Block label {
+    margin-bottom: 15px;
+}
+
+.opcionais{
+    margin-bottom: 15px;
+}
+.opcionais label, .opcionais input{
+    display: inline-block;
+}
+.filePhoto{
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.button{
+    padding: 5px;
+    background-color: rgb(104,58,182) ;
+    border-color: rgb(104,58,182);
+    border-radius: 5px;
+    width: 15vw;
+}
+.button p{
+    color: white;
+    font-weight: bold;
+}

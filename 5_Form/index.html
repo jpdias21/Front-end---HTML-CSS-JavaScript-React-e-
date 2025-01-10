@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Fazendo o form</h2>
+  <br>
+  <form action="" method="GET">
+    <label for="name">Nome :</label>
+    <input type="text" name="name" placeholder="Insira seu Nome" required>
+    <br>
+    <br>
+    <label for="email">Insira seu email</label>
+    <input type="email" name="email" placeholder="Insira seu melhor Email" required>
+    <br>
+    <br>
+    <label for="job">Seleciona sua profissão</label>
+    <select name="job" id="">
+        <option value="programador">Programador</option>
+        <option value="Economista">Economista</option>
+        <option value="Nem-Nem">Nem-Nem</option>
+    </select>
+    <br>
+    <br>
+    <label for="Homem-Mulher">Qual e sua sexo</label>
+    <select name="Homem-Mulher" id="">
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+    </select>
+    <br>
+    <br>
+    <label for="senha">Insira uma senha</label>
+    <input type="password" name="senha" placeholder="Insira uma senha" required>
+    <br>
+    <br>
+    <!--Apenas uma opcão-->
+    <label for="selecioneCarro">Escolha o carro que voce deseja :</label>
+    
+    <input type="radio" name="selecioneCarro">
+    <label for="selecioneCarro">Ferrari</label>
+    
+    <input type="radio" name="selecioneCarro">
+    <label for="selecioneCarro">Bugatti</label>
+
+    <input type="radio" name="selecioneCarro">
+    <label for="selecioneCarro">Pagani</label>
+    <br>
+    <br>
+    <!--Uma ou multiplas opcões-->
+    <label for="carrosQuer">Quais carro voce quer :</label>
+
+    <input type="checkbox" name="carrosQuer[]">
+    <label for="carrosQuer">Ferrari</label>
+
+    <input type="checkbox" name="carrosQuer[]">
+    <label for="carrosQuer">Mercedex</label>
+
+    <input type="checkbox" name="carrosQuer[]">
+    <label for="carrosQuer">Pagani</label>
+
+    <br>
+    <br>
+    <label for="data">Insira sua data de nascimento :</label>
+    <input type="date" name="data" required>
+    <br>
+    <br>
+    <label for="arquivo">Insira um arquivo :</label>
+    <input type="file" name="arquivo">
+    <br>
+    <br>
+
+
+    <!--Ultimo-->
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+    <br>
+    <br>
+
+  </form>
+</body>
+</html>

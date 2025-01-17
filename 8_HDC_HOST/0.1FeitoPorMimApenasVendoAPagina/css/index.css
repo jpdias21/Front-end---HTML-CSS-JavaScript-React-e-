@@ -1,21 +1,23 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 1200px;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 22px;
     color: white;
 }
 
 
-.boxNavBar{
+.boxNavBar {
     background-color: #232931;
     width: 100%vh;
     padding-top: 10px;
     margin-bottom: 0;
 }
-.navBarList{
+
+.navBarList {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -23,13 +25,14 @@ html, body {
     margin-bottom: 0;
     list-style-type: none;
 }
-.navButton{
-font-size: 22px;
-padding: 10px;
-padding-bottom: 15px;
+
+.navButton {
+    font-size: 22px;
+    padding: 10px;
+    padding-bottom: 15px;
 }
 
-#navEntrar{
+#navEntrar {
     color: white;
     padding: 12px;
     background-color: #62c86c;
@@ -38,48 +41,203 @@ padding-bottom: 15px;
     font-size: 24px;
 }
 
-.boxImg{
+.boxImg {
     display: flex;
     background-image: url(../img/360_F_986834525_ikDftpdk2wPLquT8C36MFJ702tUFNTbG.jpg);
     width: 100%;
     height: 360px;
-    margin-top: 0; 
+    margin-top: 0;
 }
-.boxImaText{
+
+.boxImaText {
     text-align: center;
     margin: auto;
     font-size: 30px;
 }
-main{
+
+main {
     color: black;
 }
-.box-information{
+
+.box-information {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     margin-top: 15px;
 }
-.information-01{
+
+.information-01 {
     height: 150px;
     text-align: center;
     padding: 10px;
     margin: 10px;
     word-break: break-all;
 }
-.textPLanPrice{
-    margin: auto;
-    text-align: center;
-    padding: 15px;
+
+/*Plan*/
+.box-pricePLan {
+    display: grid;
+    place-items: center;
+    
 }
-#textPricePlan{
-    font-size: 32px;
+.box-pricePlan04ofers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.boxOffersPlans{
+    width: 200px;
+    margin: 50px;
+}
+.boxOffersPlans button{
+    background-color: #2dc76a;
+    border:  #2dc76a;
+    width: 100%;
+    height: 60px;
+}
+.boxOffersPlans span{
+    color: white;
+    font-size: 20px;
+}
+#textPricePlan01{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+#textPricePlan02{
+    font-size: 20px;
+}
+#oferGreen{
+    background-color: #2dc76a;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    line-height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+#oferBlue{
+    color: white;
+    background-color: #202a34;
+    height: 100px;
+    text-align: center;
+    line-height: 120px;
+    position: relative;
+    top: -62px;
+    z-index: 1;
+} 
+
+/*Plan*/
+
+/* Check domain*/
+.checkDomain {
+    height: auto;
+    background-color: #34464f;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxSectionInformation {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#boxSectionInformation-text {
+    font-size: 30px;
+}
+
+#boxSectionInformation-text02 {
+    font-size: 24px;
+}
+
+.checkDomain input {
+    height: 50px;
+    width: 50vw;
+    border: white;
+    border-radius: 5px;
+}
+
+.checkDomain input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63, 51, 51);
+}
+
+#cheakDomainButton {
+    margin-top: 30px;
+    width: 250px;
+    padding: 0;
+    background-color: #2dc76a;
+    border: #2dc76a;
+    border-radius: 5px;
+}
+
+#cheakDomainButton p {
+    font-size: 25px;
+    color: white;
     font-weight: bold;
 }
 
-
 /* Check domain*/
-.checkDomain{
-    height: 100px;
-    background-color: #34464f;
+
+/*Contact Form*/
+.contatacForm {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacformText01 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contacformText02 {
+    font-size: 22px;
+}
+
+.contatacForm input {
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.contatacForm input::placeholder {
+    font-size: 18px;
+}
+
+.contatacForm textarea {
+    width: 600px;
+    font-size: 18px;
+}
+
+.contatacForm button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 0;
+    background-color: #2dc76a;
+    border: #2dc76a;
+    border-radius: 5px;
+
+}
+
+.contatacForm button {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
 }

@@ -1,0 +1,398 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 22px;
+    color: white;
+}
+
+
+.boxNavBar {
+    background-color: #232931;
+    width: 100%vh;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.navBarList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+/*02.Adicionando transition*/
+.navButton {
+    font-size: 22px;
+    padding: 10px;
+    padding-bottom: 15px;
+    transition: color 0.5s;
+}
+.navButton:hover{
+    color: gray;
+}
+
+#navEntrar {
+    color: white;
+    padding: 12px;
+    background-color: #62c86c;
+    border: inherit;
+    border-radius: 5px;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+#navEntrar:hover {
+    background-color: red;
+}
+
+/*02.Adicionando transition*/
+
+.boxImg {
+    display: flex;
+    background-image: url(../img/360_F_986834525_ikDftpdk2wPLquT8C36MFJ702tUFNTbG.jpg);
+    width: 100%;
+    height: 360px;
+    margin-top: 0;
+}
+
+.boxImaText {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+main {
+    color: black;
+}
+
+.box-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*Mundanca muito boa*/
+.box-information li{
+    flex: 1 1 200px;
+}
+.fas{
+    font-size: 60px;
+}
+#symbolGreen{
+    color: #2dc76a ;
+}
+#symbolRed{
+    color: red;
+}
+#symbolBlue{
+    color: blue;
+}
+.information-02 {
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 35px;
+    word-break: break-all;
+}
+
+/*Plan*/
+.box-pricePLan {
+    display: grid;
+    place-items: center;
+    
+}
+.box-pricePlan04ofers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.boxOffersPlans{
+    width: 200px;
+    margin: 50px;
+}
+.boxOffersPlans button{
+    background-color: #2dc76a;
+    border:  #2dc76a;
+    width: 100%;
+    height: 60px;
+}
+.boxOffersPlans span{
+    color: white;
+    font-size: 20px;
+}
+#textPricePlan01{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+#textPricePlan02{
+    font-size: 20px;
+}
+#oferGreen{
+    background-color: #2dc76a;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    line-height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+#oferRed{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    line-height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+#oferBlue{
+    color: white;
+    background-color: #202a34;
+    height: 100px;
+    text-align: center;
+    line-height: 120px;
+    position: relative;
+    top: -62px;
+    z-index: 1;
+} 
+
+/*Plan*/
+
+/* Check domain*/
+.checkDomain {
+    height: auto;
+    background-color: #34464f;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxSectionInformation {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#boxSectionInformation-text {
+    font-size: 30px;
+}
+
+#boxSectionInformation-text02 {
+    font-size: 24px;
+}
+
+.checkDomain input {
+    height: 50px;
+    width: 50vw;
+    border: white;
+    border-radius: 5px;
+}
+
+.checkDomain input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63, 51, 51);
+}
+
+#cheakDomainButton {
+    margin-top: 30px;
+    width: 250px;
+    padding: 0;
+    background-color: #2dc76a;
+    border: #2dc76a;
+    border-radius: 5px;
+}
+
+#cheakDomainButton p {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Check domain*/
+
+/*Contact Form*/
+.contatacForm {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacformText01 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contacformText02 {
+    font-size: 22px;
+}
+
+.contatacForm input {
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.contatacForm input::placeholder {
+    font-size: 18px;
+}
+
+.contatacForm textarea {
+    width: 600px;
+    font-size: 18px;
+}
+
+.contatacForm button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 0;
+    background-color: #2dc76a;
+    border: #2dc76a;
+    border-radius: 5px;
+
+}
+
+.contatacForm button {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+ /*Midia para mobile*/
+@media (max-width: 576px) {
+   /*NavBar*/
+   .navBarList{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+   }
+   /*BoxImg*/
+   .boxImg h1, .boxImg h2{
+    word-break: break-all;
+   }
+   .boxImaText h1{
+    font-size: 40px;
+
+   }
+   .boxImaText h2{
+    font-size: 26px;
+    text-align: centar;
+   }
+   
+    /*box-information*/
+    .box-information{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+   .information-02{
+    height: auto;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    }
+    .box-information h3{
+        font-size: 26px;
+    }
+    .box-information p{
+        font-size: 20px;
+    }
+    #oferBlue{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .boxOffersPlans p{
+        font-size: 20px;
+    }
+    /*  Plan*/
+    .box-pricePLan{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .textPlanPrice{
+        text-align: center;
+    }
+    .box-pricePlan04ofers{
+        display: block;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .boxOffersPlans{
+        width: 100%;
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+/*Domain*/
+    .checkDomain{
+        align-items: center;
+    }
+    #boxSectionInformation-text02{
+        font-size: 18px;
+    }
+    .checkDomain input::placeholder {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(63, 51, 51);
+    }
+
+/*Form*/
+    #form{
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+    #form input{
+        width: 90%;
+    }
+    #form textarea{
+        width: 100%;
+    }
+}
+/*Midia para Tablet*/
+@media (max-width: 1100px){
+    .box-pricePlan04ofers{
+        margin: 0;
+        padding: 0;
+    }
+    .boxOffersPlans{
+        padding: 10px;
+        width: 100%;
+    }
+}

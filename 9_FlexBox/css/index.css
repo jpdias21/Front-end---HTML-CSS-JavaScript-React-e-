@@ -1,0 +1,122 @@
+body{
+    padding: 20px; 
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Display Flex*/
+.conteinerFlexBox{
+    background-color: blue;
+    display: flex;
+    margin: 10px;
+}
+/* 2- Flex Colum*/
+.flexColum{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+/* 3-Wrap*/
+.flexWrap , .gap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-Wrap, .box-gap{
+    height: 40px;
+    width: 33%;
+    border: solid 2px green;
+}
+
+/* 4- Justify content*/
+h2{
+    text-align: center;
+}
+.box {        
+    width: 100px;
+    margin: 10px;
+    height: 40px;
+    border: solid 2px green;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.spaceAround{
+    display: flex;
+    justify-content: space-around;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.end{
+    display: flex;
+    justify-content: end;
+}
+/* 5- Align itens*/
+.alignIntensCenter ,.alignIntensEnd,.alignIntensStretch{
+    height: 200px;
+    border: solid 1px blue;
+}
+.box-alingIntens{
+    width: 100px;
+    margin: 10px;
+    height: 40px;
+    border: solid 2px red;
+}
+.alignIntensCenter{
+    display: flex;
+    align-items: center;
+}
+.alignIntensEnd{
+    display: flex;
+    align-items: end;
+}
+.alignIntensStretch{
+    display: flex;
+    align-items: stretch;
+}
+.alignIntensStretch .box-alingIntens{
+    height: auto;
+}
+/* 6- Gab*/
+.gap{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 7- Order*/
+.order{
+    display: flex;
+}
+#um{
+    order: 1;
+}
+#dois{
+    order: 2;
+}
+#tres{
+    order: 3;
+}
+
+/* 8- Grow*/
+.grow{
+    display: flex;
+}
+.grow #big{
+    flex-grow: 2;
+}
+
+/* 9- Basis*/
+.basis{
+    display: flex;
+}
+.basis .box{
+    flex-basis: 20px;
+}
+.basis #big{
+    flex-grow: 1;
+}
+

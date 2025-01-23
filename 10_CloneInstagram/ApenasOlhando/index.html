@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <main>
+        <section class="conteiner-instagram">
+            <section class="imagem">
+                <img src="./img/banner2.png" alt="" width="400px">
+            </section>
+
+            <section class="section-form">
+                <form action="" id="form-Instagram">
+                    <div id="logoInstagram">
+                        <img src="./img/logo_instagram.png" alt="" width="150px">
+                    </div>
+                    <section class="div-form">
+                       <input type="text" placeholder="Numero de telefone, usuario ou email">
+                       <br>
+                       
+                       <input type="text" placeholder="Senha">
+                        <br>
+
+                       <button type="submit">Entrar</button>
+                        
+                       <div class="boxlinha"></div>
+
+                       <section class="facebook">
+                        
+                        <img src="./img/logo_facebook.svg" alt="" width="20px">
+                        <span> <a href="https://facebook.com" target="_blank">Entrar com o Facebook </a></span>
+                       
+                        </section>
+                       
+                        <section class="conteiner03">
+                            <a href="https://www.instagram.com/accounts/password/reset/">Esqueceu a senha</a>
+                            <p>Nao tem uma conta ? <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a></p>
+                        </section>
+                        <section class="conteiner04">
+                            <p>Obtenha o aplicativo</p>
+                            <div class="imgApp">
+                                <a href="https://play.google.com/store" target="_blank">
+                                    <img src="./img/apple_btn.png" alt="" width="130px">
+                                </a>
+                                <a href="https://play.google.com/store" target="_blank">
+                                    <img src="./img/gplay_btn.png" alt="" width="130px">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+
+                </form>
+
+            </section>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- Analise do chat gpt
+ ua tentativa de recriar a página de login do Instagram mostra um bom esforço em replicar o layout e estrutura principais, mas existem algumas áreas que poderiam ser aprimoradas para melhorar a qualidade, escalabilidade e manutenção do código. Aqui está uma análise profissional do seu trabalho, incluindo o que está bom, o que pode melhorar e sugestões de estudo.
+
+Pontos Positivos
+Estrutura HTML
+
+O HTML está semanticamente bem organizado, com uso correto de tags como main, section, e form.
+A separação das seções é clara, facilitando a compreensão do layout e a aplicação de estilos.
+Estilo CSS
+
+O uso de flexbox para alinhar e distribuir os elementos é uma escolha sólida e moderna.
+Responsividade básica foi considerada com @media queries, o que é essencial para layouts modernos.
+Acessibilidade
+
+Você adicionou atributos alt para as imagens, o que é bom para acessibilidade e SEO.
+As cores e contrastes parecem adequados para uma leitura clara.
+Experiência do Usuário
+
+Links para recuperação de senha, login com Facebook e instalação do aplicativo são funcionalidades úteis e bem implementadas.
+Áreas para Melhorar
+Validação de Formulário
+
+Os campos de entrada não têm atributos como type="email" para validação básica.
+Adicionar validações (tanto no front-end quanto no back-end) ajuda a evitar entradas inválidas.
+Design Responsivo
+
+Apesar de incluir media queries, o layout poderia ser mais fluido em telas menores:
+Os inputs e botões ocupam 90% da largura. Em dispositivos pequenos, pode ser necessário reduzir margens ou ajustar o espaçamento.
+A largura da seção .section-form com 30% em telas maiores pode causar desalinhamento dependendo do tamanho da janela.
+Uniformidade de Estilo
+
+O botão de login e os links usam cores semelhantes, mas não seguem um padrão consistente (exemplo: estilos de hover e focus).
+Algumas propriedades, como border e margin, poderiam ser padronizadas para evitar inconsistências.
+CSS Repetitivo
+
+O CSS tem regras que poderiam ser simplificadas:
+Por exemplo, você aplica width: 90% em vários elementos. Considere criar uma classe utilitária reutilizável.
+O seletor .facebook img { padding: 10px; } poderia ser mesclado com outras regras de imagem.
+Hierarquia do HTML
+
+A hierarquia e nomenclatura poderiam ser mais consistentes:
+O ID #logoInstagram poderia ser uma classe para evitar o uso desnecessário de IDs (que têm alta especificidade).
+Classes como conteiner03 e conteiner04 não são descritivas, dificultando o entendimento do propósito.
+Sugestões de Estudo e Melhoria
+Aprimore a Responsividade
+
+Estude CSS Grid para criar layouts mais versáteis e escaláveis.
+Explore conceitos como rem, em e clamp() para tornar o design responsivo mais dinâmico.
+Acessibilidade
+
+Aprenda mais sobre ARIA roles para melhorar a navegação assistiva.
+Valide o design com ferramentas como Wave.
+Semântica HTML
+
+Estude as diferenças entre div, section e article para usar a marcação mais apropriada.
+Utilize elementos como label para os campos de formulário, melhorando a acessibilidade e usabilidade.
+Organização do CSS
+
+Adote metodologias como BEM (Block, Element, Modifier) para nomear classes de forma mais intuitiva e organizada.
+Use um pré-processador como SASS para evitar duplicação de código e criar mixins para media queries.
+Validação e UX
+
+Adicione mensagens de erro e estados visuais para inputs inválidos.
+Aprenda sobre animações CSS para tornar interações como hover e focus mais atraentes.
+Performance
+
+Otimize as imagens usadas, garantindo que estejam no formato correto (ex.: WebP para web).
+Considere o uso de um favicon para personalizar o ícone da aba do navegador.
+Resumo
+Seu projeto está em um bom ponto de partida, com os principais fundamentos de HTML e CSS implementados. Para levar o projeto ao próximo nível, foque em melhorar a responsividade, acessibilidade, organização do CSS e a experiência do usuário. Com o tempo, incorporar práticas como validação de formulários, animações e design semântico tornará seus projetos ainda mais impressionantes.
+
+Continue praticando e estudando tópicos como:
+
+Responsividade avançada
+Acessibilidade (WCAG)
+Organização e modularização do código
+Esses conceitos ajudarão a tornar seu trabalho mais profissional e escalável!
+-->
+
+<!-- Anasile do gemini
+ escreva em portugues br
+
+
+Análise Detalhada do Seu Código HTML e CSS
+Parabéns pela iniciativa de recriar a página de login do Instagram! Você já demonstrou um bom entendimento dos conceitos básicos de HTML e CSS. Vamos analisar seu código com mais profundidade para identificarmos pontos fortes e oportunidades de melhoria.
+
+Pontos Positivos
+Estrutura Clara: O código está bem organizado, com uma estrutura lógica e fácil de entender.
+Responsividade: A utilização de media queries demonstra um bom entendimento de como adaptar o layout para diferentes tamanhos de tela.
+Estilização: Os elementos visuais estão bem estilizados, com cores e fontes que remetem ao design original do Instagram.
+Áreas para Melhoria
+Semântica:
+
+Elementos HTML: A utilização de elementos semânticos como <header> e <form> tornaria o código mais claro e acessível. Por exemplo, o logo do Instagram poderia estar dentro de um elemento <header>.
+Atributos label: Para melhorar a acessibilidade e a experiência do usuário, é recomendado associar um elemento <label> a cada campo de input. Isso facilita a navegação com teclado e a compreensão do propósito de cada campo.
+Acessibilidade:
+
+alt para todas as imagens: É fundamental adicionar o atributo alt a todas as imagens, descrevendo o conteúdo da imagem para usuários de tecnologias assistivas.
+aria-* attributes: Para elementos mais complexos, como botões e links, você pode utilizar atributos ARIA para fornecer informações adicionais sobre o elemento e sua função.
+Otimização:
+
+Seletores CSS: Evite seletores muito genéricos (como *) e utilize seletores mais específicos para melhorar a performance do seu CSS.
+Minificação: Minificar o CSS e o HTML pode reduzir o tamanho dos arquivos e melhorar o tempo de carregamento da página.
+Melhorias Adicionais:
+
+Flexbox: Explore o uso de Flexbox para criar layouts mais flexíveis e responsivos.
+CSS Grid: Para layouts mais complexos, o CSS Grid pode ser uma ótima opção.
+Pré-processadores CSS: Utilize um pré-processador como Sass ou Less para organizar melhor seu CSS e utilizar recursos como variáveis, mixins e aninhamento.
+Sugestões Práticas
+Validação de formulário: Implemente a validação do formulário para garantir que os dados inseridos pelo usuário sejam válidos.
+Feedback ao usuário: Forneça feedback visual ao usuário, como mensagens de erro ou sucesso, durante o processo de login.
+Segurança: Se você estiver coletando dados de usuário, certifique-se de armazená-los de forma segura e criptografada.
+Performance: Otimize seu código para garantir que a página carregue rapidamente.
+Exemplo de código com melhorias:
+
+HTML
+
+<header>
+    <img src="./img/logo_instagram.png" alt="Logo do Instagram">
+</header>
+<form action="" id="form-Instagram">
+    <label for="username">Número de telefone, usuário ou email</label>
+    <input type="text" id="username" placeholder="Username" required>
+    </form>
+Recursos Adicionais:
+
+MDN Web Docs: Uma excelente fonte de documentação sobre HTML, CSS e JavaScript.
+W3Schools: Tutoriais e exemplos práticos sobre tecnologias web.
+CodePen: Uma plataforma para criar e compartilhar snippets de código.
+Lembre-se: A prática leva à perfeição. Continue explorando novas técnicas e ferramentas para aprimorar suas habilidades em desenvolvimento web.
+
+Gostaria de que eu analisasse alguma parte específica do seu código ou te desse mais dicas sobre algum tópico em particular?
+
+Observação: Para uma análise mais detalhada, seria interessante ver o seu código CSS completo.
+-->

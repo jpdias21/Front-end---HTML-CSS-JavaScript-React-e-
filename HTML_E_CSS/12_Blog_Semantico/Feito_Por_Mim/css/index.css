@@ -1,0 +1,156 @@
+body{
+    margin: 40px;
+    padding: 20px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.navibarBlog{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#iconText{
+    font-size: 24px;
+    font-weight: bold;
+}
+img{
+    width: 800px;
+}
+
+/*Configurando o main*/
+article{
+    margin-top: 80px;
+}
+figcaption{
+    width: 90%;
+}
+
+
+
+
+/*Configurando o aside*/
+main{
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+aside{
+    padding: 10px;
+    width: 40%;
+}
+
+form label{
+    color: white;
+    background-color: blue;
+    padding: 8px;
+}
+form input{
+    height: 25px;
+    width: 70%;
+    border: white;
+}
+form{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+aside ul{
+    list-style: none;
+    text-align: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.categorias li{
+    padding: 5px;
+}
+
+ 
+.Tags-ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+#tags-li{
+    background-color: gray;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+#tags-li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Configurando o Footer*/
+footer{
+    text-align: center;
+    margin-top: 100px;
+    border-top: 2px solid gray;
+}
+.footerBlog{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*Configurando tamanho para tablet*/
+@media (max-width:1024px){
+    main{
+        padding: 0;
+    }
+    img{
+        width: 95%;
+    }
+    aside{
+        width: 70%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    form input{
+        height: 35px;
+        width: 90%;
+        border: gray solid 1px;
+        margin: 15px;
+    }
+    
+}
+/*Configurando tamanho para mobile*/
+@media (max-width:574px){
+    body{
+        margin: 0;
+        padding: 5px;
+    }   
+    nav{
+        padding: 10px;
+    } 
+    main{
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+        }
+    aside{
+        width: 90%;
+    }
+}
+
+
